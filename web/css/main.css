@@ -1,0 +1,51 @@
+body {
+  background: #F1F1F1; }
+  body .col {
+    background: #FFF;
+    height: 300px;
+    overflow: scroll;
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 5px #D7D7D7;
+    margin: 10px 0; }
+    body .col .info {
+      color: white;
+      text-decoration: none;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      padding: 7px;
+      background: #2B99FF;
+      font-family: "Helvetica Neue", sans-serif; }
+    body .col .info:hover {
+      color: white;
+      transition: 0.5s;
+      background: #FE89AF;
+      text-decoration: none; }
+  body h1 {
+    margin: 5px 0;
+    font-size: 1.4em; }
+  body h2 {
+    margin: 5px 0;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 0.9em; }
+  body p > img {
+    width: 100%;
+    height: auto; }
+  body .glyphicon-trash {
+    float: right;
+    padding: 2px; }
+  body .glyphicon-trash:hover {
+    color: #EA0D25;
+    transition: 0.4s; }
+  body .error {
+    color: #fff;
+    font-size: 12em;
+    font-weight: bold;
+    font-family: Helvetica;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: center; }

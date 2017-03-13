@@ -1,0 +1,14 @@
+{
+    "name": "bastien/dev",
+    "description": "S4 php",
+    "authors": [
+        {
+            "name": "BastienTeixeira",
+            "email": "bastien.teixeira38@gmail.com"
+        }
+    ],
+    "require": {
+        "zendframework/zend-feed": "^2.7",
+        "zendframework/zend-http": "^2.6"
+    }
+}

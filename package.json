@@ -1,0 +1,29 @@
+{
+  "name": "php",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:scss:main": "node-sass ./css/main.scss -o ./web/css",
+    "build:scss:bootstrap": "node-sass ./css/bootstrap.scss -o ./web/css --output-style compressed",
+    "assets:install:bootstrap": "shx cp -r ./node_modules/bootstrap-sass/assets/fonts/bootstrap -o ./web/fonts/ & shx cp ./node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js ./web/js/",
+    "watch:scss:main": "node-sass --watch ./css/main.scss -o ./web/css",
+    "build:js:app": "webpack --config webpack.config.js",
+    "watch:js:app": "webpack --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.22.0",
+    "bootstrap": "^3.3.7",
+    "bootstrap-sass": "^3.3.7",
+    "node-sass": "^4.5.0",
+    "shx": "^0.2.2"
+  },
+  "dependencies": {
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.2",
+    "webpack": "^2.2.1",
+    "whatwg-fetch": "^2.0.3"
+  }
+}
