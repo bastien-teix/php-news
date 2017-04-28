@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:scss:main": "node-sass ./css/main.scss -o ./web/css",
-    "build:scss:bootstrap": "node-sass ./css/bootstrap.scss -o ./web/css --output-style compressed",
+    "build:scss:main": "node-sass ./scss/main.scss -o ./web/css",
+    "build:scss:bootstrap": "node-sass ./scss/bootstrap.scss -o ./web/css --output-style compressed",
+
     "assets:install:bootstrap": "shx cp -r ./node_modules/bootstrap-sass/assets/fonts/bootstrap -o ./web/fonts/ & shx cp ./node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js ./web/js/",
     "watch:scss:main": "node-sass --watch ./css/main.scss -o ./web/css",
     "build:js:app": "webpack --config webpack.config.js",

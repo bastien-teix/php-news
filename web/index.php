@@ -2,7 +2,7 @@
 
 //phpinfo();
 
-$pdo = new PDO('sqlite:./database.sqlite');  
+$pdo = new PDO('sqlite:../database.sqlite');  
 
 $idArticle = $_GET['idArticle'];
 
@@ -18,7 +18,7 @@ if (isset($idArticle)){
 
 	if($count==0){
 		http_response_code(404);
-		include('404.php'); // provide your own HTML for the error page
+		include('404.php'); // error page
 		die();
 	}
 
@@ -37,8 +37,8 @@ $articles = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="web/css/main.css"/>
 	<link rel="stylesheet" href="web/css/bootstrap.css"/>
+	<link rel="stylesheet" href="web/css/main.css"/>
 </head>
 	<body class="container">
 	<div class="row">
@@ -56,6 +56,6 @@ $articles = $stmt->fetchAll(PDO::FETCH_ASSOC);
 			</div>
 		<?php endforeach ?>
 	</div>
-	<script src="web/js/app.js" type="text/javascript"></script>
+	<script src="js/app.js" type="text/javascript"></script>
  	</body>
 </html>
